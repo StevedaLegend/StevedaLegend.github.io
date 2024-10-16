@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Steve Fasoranti Personal Portfolio</title>
-    <link rel="stylesheet" href="0.jpg"> <!--Link to my image-->
+    <title>Steve Fasoranti Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
     <style>
         /* Example styling, you can move this to an external stylesheet */
@@ -18,7 +17,7 @@
         }
 
         header {
-            background-color: #007BFF;
+            background-color: #000000;
             padding: 20px;
             color: white;
             text-align: center;
@@ -42,7 +41,19 @@
         }
 
         .container {
+            display: flex;
+            justify-content: space-between;
             padding: 20px;
+        }
+
+        .about-section {
+            max-width: 60%;
+        }
+
+        img {
+            max-width: 10%;
+            height: auto;
+            border-radius: 3px;
         }
 
         h1 {
@@ -62,37 +73,134 @@
             width: 100%;
             bottom: 0;
         }
+
+        h2 {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(45% - 20px);
+            /* Adjusting box size */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .project p {
+            color: #555;
+        }
+
+        .project a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
+        <h2>Welcome to My Portfolio</h2> <!-- Welcome message added here -->
         <h1>Steve Fasoranti</h1>
     </header>
 
     <nav>
         <a href="about.html">About</a>
         <a href="Projects.html">Projects</a>
-        <a href="Programming.html">Programming Skiils</a>
+        <a href="Programming.html">Programming Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
-        <section id="about">
+        <section id="about" class="about-section">
             <h2>About Me</h2>
-            <p>Hello, my name is Steve Fasoranti I am currently studying Software Development/ Software Engineering at
+            <p>Hello, my name is Steve Fasoranti. I am currently studying Software Development/Software Engineering at
                 South East Technological University Carlow.</p>
         </section>
 
+        <!-- Image of Steve Fasoranti -->
+        <img src="0.jpg" alt="Steve Fasoranti">
+    </div>
+
+    <body>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project">
+                        <h3>Blogger Site</h3>
+                        <p>I developed a website where you can create an account, login, make a blog post and have it
+                            on the main home page where other bloggers post.</p>
+                        <h4>My Source Code</h4>
+                        <p>Here is a link to my Github: <a
+                                href="https://github.com/StevedaLegend/Bloggers-Project-Site">Blogger Site</a></p>
+                    </div>
+
+                    <div class="project">
+                        <h3>Endless Runner 2D game</h3>
+                        <p>I developed a 2d based runner game where the player on the right shoots projectiles while the
+                            one on the left jumps over
+                            them and avoid then while gaining points!
+                        </p>
+                        <h4>My Source Code</h4>
+                        <p>Here is a link to my Github: <a
+                                href="https://github.com/StevedaLegend/Endless-Runner-game/tree/main/Endless%20runner%20project%20full">Endless
+                                Runner</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <div class="container">
+        <section id="skills">
+            <h2>Programming Skills</h2>
+            <p>Java</p>
+            <p>Python</p>
+            <p>SQL</p>
+            <p>PHP</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Assembly Language</p>
+            <p>JavaScript</p>
+            <p>C</p>
+            <p>C#</p>
+            <p>GIT</p>
+            <p>Jupyter Notebooks</p>
+        </section>
+    </div>
+
+    <div class="container">
         <section id="contact">
             <h2>Contact Me</h2>
             <p>Email: stevefasoranti60@gmail.com</p>
         </section>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Steve Fasoranti. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
