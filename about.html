@@ -36,10 +36,35 @@
             text-align: center;
             color: #333;
         }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-button:active {
+            background-color: #004080;
+        }
     </style>
 </head>
 
 <body>
+
+    <a href="index.html" class="back-button">← Back</a>
+
     <header>
         <h1>About Me</h1>
     </header>
