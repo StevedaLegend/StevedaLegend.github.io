@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Steve Fasoranti</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(45% - 20px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .project p {
+            color: #555;
+        }
+
+        .project a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Steve Fasoranti - Projects</h1>
+    </header>
+
+    <a href="index.html" class="back-button">← Back</a>
+
+    <!-- Projects Section 1 -->
+    <div class="container">
+        <section id="projects">
+            <h2>Game Development Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>New Super Mario DS X New Super Mario World</h3>
+                    <p>I am currently developing a small game from the hit game New Super Mario Bros DS but
+                        in super mario worlds version using Lua, Ruby, and Super Mario Bros X2 Editor for level design.
+                    </p>
+                    <h4>My Source Code</h4>
+                    <p>Check the code here: <a
+                            href="https://github.com/StevedaLegend/New-Super-Mario-Bros--Project--">New Super Mario Bros
+                            DS X New Super Mario World</a></p>
+                </div>
+
+                <div class="project">
+                    <h3>Endless Runner 2D Game</h3>
+                    <p>I developed a 2D-based runner game using assembly language. The game includes sound effects with
+                        players
+                        shooting projectiles to prevent opponents from scoring.</p>
+                    <h4>My Source Code</h4>
+                    <p>Check the code here: <a href="https://github.com/StevedaLegend/Endless-Runner-game">Endless
+                            Runner</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects Section 2 -->
+    <div class="container">
+        <section id="projects">
+            <h2>Web Development Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Blogger Site</h3>
+                    <p>I developed a blogging website where users can create accounts, log in, and post blogs on the
+                        main page where others can see them.</p>
+                    <h4>My Source Code</h4>
+                    <p>Check the code here: <a href="https://github.com/StevedaLegend/Bloggers-Project-Site">Blogger
+                            Site</a></p>
+                </div>
+
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>This is a personal portfolio website where I showcase my skills, projects, and experience in the
+                        field of software development.</p>
+                    <h4>My Source Code</h4>
+                    <p>Check the code here: <a href="https://github.com/StevedaLegend/Portfolio-Website">Portfolio
+                            Website</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects Section 3 -->
+    <div class="container">
+        <section id="projects">
+            <h2>Other Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Random Test Data Generator</h3>
+                    <p>I developed a Java application that generates test cases using the JUnit library to automate and
+                        streamline software testing.</p>
+                    <h4>My Source Code</h4>
+                    <p>Check the code here: <a href="https://github.com/StevedaLegend/Random-Test-Data-Generator">Random
+                            Test Data Generator</a></p>
+                </div>
+
+                <div class="project">
+                    <h3>Discord Clone</h3>
+                    <p>I am currently working on a clone of the Discord app as my final year project for university.
+                        It's a work in progress, but I've implemented some key features.</p>
+                    <h4>My Source Code</h4>
+                    <p>Check the code here: <a href="https://github.com/StevedaLegend/Discord-Clone">Discord Clone</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

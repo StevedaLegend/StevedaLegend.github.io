@@ -58,6 +58,30 @@
         .back-button:active {
             background-color: #004080;
         }
+
+        footer {
+            background-color: #333;
+            color: rgb(55, 0, 255);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            filter: brightness(0) invert(1);
+        }
+
+        footer a:hover img {
+            filter: brightness(0.8) invert(1);
+        }
     </style>
 </head>
 
@@ -105,5 +129,14 @@
             <div>Reading tech blogs</div>
         </div>
     </section>
+
+    <footer>
+        <a href="https://github.com/StevedaLegend" target="_blank">
+            <img src="github-logo.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/stevefasoranti/" target="_blank">
+            <img src="linkedin-logo.png" alt="LinkedIn">
+        </a>
+    </footer>
 
 </html>
